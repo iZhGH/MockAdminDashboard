@@ -1,0 +1,30 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.dashBoardContainer {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+
+.leftMenuContainer {
+    height: 100vh;
+    background-color: lightskyblue;
+    grid-row: span 4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, minmax(0px, auto));
+   
+
+}
+
+.leftMenuContainer p {
+    margin: 0;
+}
+
+
+.headerContainer {
+    background-color: lightgray;
+    grid-column: span 3;
+}
