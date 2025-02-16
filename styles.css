@@ -4,7 +4,7 @@ body {
 }
 .dashBoardContainer {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: repeat(4,1fr);
 }
 
@@ -26,5 +26,49 @@ body {
 
 .headerContainer {
     background-color: lightgray;
-    grid-column: span 3;
+    grid-column: span 1;
+}
+
+.topHeader {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.bottomHeader {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+
+.topHeaderLeft {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.topHeaderRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.bottomHeaderLeft {
+    display: flex;
+    gap: 10px;
+    margin-left: 15px;
+    align-items: center;
+
+
+}
+
+
+
+.searchButton {
+    height: 30px;
+    width: 450px;
+    background-color: darkgray;
 }
